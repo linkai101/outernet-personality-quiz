@@ -10,7 +10,7 @@ export default function Question5Page() {
   return <>
     <div className="md:h-screen bg-indigo-700 text-white">
       <p className="text-3xl">
-        #10: it's late at night and your friend group wants to go to the bonfire to roast smores...
+        #10: it&apos;s late at night and your friend group wants to go to the bonfire to roast smores...
       </p>
     </div>
 

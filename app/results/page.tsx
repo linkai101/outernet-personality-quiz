@@ -56,13 +56,13 @@ export default function Question5Page() {
 
       <ul className="mt-6">
         {superlatives && Object.entries(superlatives).map(([k,v]) =>
-          <li>{k}: {v.toFixed(2)}</li>
+          <li key={k}>{k}: {v.toFixed(2)}</li>
         )}
       </ul>
 
       <ul className="mt-6">
         {attributes && Object.entries(attributes).map(([k,v]) =>
-          <li>{k}: {v.toFixed(2)}</li>
+          <li key={k}>{k}: {v.toFixed(2)}</li>
         )}
       </ul>
     </div>

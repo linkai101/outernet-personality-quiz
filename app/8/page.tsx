@@ -10,7 +10,7 @@ export default function Question5Page() {
   return <>
     <div className="md:h-screen bg-sky-700 text-white">
       <p className="text-3xl">
-        #8: it's raining hard and you are the only person holding an umbrella...
+        #8: it&apos;s raining hard and you are the only person holding an umbrella...
       </p>
     </div>
 

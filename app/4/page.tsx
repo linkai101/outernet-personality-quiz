@@ -11,7 +11,7 @@ export default function Question4Page() {
   return <>
     <div className="md:h-screen bg-green-700 text-white">
       <p className="text-3xl">
-        #4: it's late (~11pm) on day 1... 🌃
+        #4: it&apos;s late (~11pm) on day 1... 🌃
       </p>
     </div>
 

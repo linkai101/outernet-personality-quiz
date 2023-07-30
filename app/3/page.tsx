@@ -11,7 +11,7 @@ export default function Question3Page() {
   return <>
     <div className="md:h-screen bg-lime-700 text-white">
       <p className="text-3xl">
-        #3: your group is discussing project plans but you can't seem to get to a consensus...
+        #3: your group is discussing project plans but you can&apos;t seem to get to a consensus...
       </p>
     </div>
 
