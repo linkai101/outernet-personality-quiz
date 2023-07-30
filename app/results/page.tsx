@@ -55,15 +55,17 @@ export default function Question5Page() {
       </p>
 
       <ul className="mt-6">
-        {superlatives && Object.entries(superlatives).map(([k,v]) =>
+        {superlatives && Object.entries(superlatives).map(([k,v]) => <>
+          {/* @ts-ignore */}
           <li key={k}>{k}: {v.toFixed(2)}</li>
-        )}
+        </>)}
       </ul>
 
       <ul className="mt-6">
-        {attributes && Object.entries(attributes).map(([k,v]) =>
+        {attributes && Object.entries(attributes).map(([k,v]) => <>
+          {/* @ts-ignore */}
           <li key={k}>{k}: {v.toFixed(2)}</li>
-        )}
+        </>)}
       </ul>
     </div>
   </>;
