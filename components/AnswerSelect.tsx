@@ -28,7 +28,7 @@ export default function AnswerSelect({ className, questionIndex, question, answe
     // load from localStorage
     const saved = JSON.parse(localStorage.getItem('answers') || '{}');
     setSelected(saved[questionIndex] || null);
-  }, []);
+  }, [questionIndex]);
 
   function handleSelect(index:number) {
     setSelected(index);
@@ -60,7 +60,7 @@ export default function AnswerSelect({ className, questionIndex, question, answe
 
       <div className="flex flex-col gap-2 text-sm mt-3">
         {answers.map((answer, i) =>
-          <button className={`px-3 py-1.5 text-left rounded-lg ${selected===i ? 'outline outline-[3px] outline-red-500 bg-neutral-200' : 'bg-neutral-200/75'}`} onClick={() => handleSelect(i)}>
+          <button className={`px-3 py-1.5 text-left rounded-lg ${selected===i ? 'outline outline-[3px] outline-red-500 bg-neutral-200' : 'bg-neutral-200/75'}`} onClick={() => handleSelect(i)} key={answer}>
             {answer}
           </button>
         )}
